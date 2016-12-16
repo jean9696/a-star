@@ -1,2 +1,10 @@
-# a-star git init git add README.md git commit -m first commit git remote add origin git@github.com:jean9696/a-star.git git push -u origin master
-# a-star
+# A-star
+
+##How to use
+##### Select a size for your maze
+#####Click on the maze to select a starting point and a end point
+
+**Have fun !**
+
+##Exemple
+http://codepen.io/jean9696/pen/KNbmRZ

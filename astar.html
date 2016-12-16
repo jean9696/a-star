@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="astar.css">
+<div id="app">
+    <div>
+        Veuillez initialiser la taille du labyrinthe
+        <label>
+            x
+            <input type="number" v-model="size.x" @change="initTab">
+        </label>
+        <label>
+            y
+            <input type="number" v-model="size.y" @change="initTab">
+        </label>
+        <label>
+            Pourcentage d'obstacles
+            <input type="number" v-model="obstacles" max="100" min="1" @change="initTab">
+        </label>
+        <button @click="initTab">reset</button>
+        <button @click="pathFinding" v-if="state=='finding'">1 step</button>
+        <button @click="pathFindingInOne" v-if="state=='finding'">All steps</button>
+        <button @click="pathFindingInstant" v-if="state=='finding'">Resolve</button>
+        <button @click="stop" v-if="state=='finding'">Stop</button>
+        <span v-if="state=='finding'">Steps : {{step}}</span>
+        <label>
+            Montrer les valeurs
+            <input type="checkbox" v-model="showvalue">
+        </label>
+
+
+    </div>
+    <maze :size="size" :tab.sync="tab" :showvalue="showvalue"></maze>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+<script src="astart.js"></script>

@@ -1,0 +1,30 @@
+.case{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border: solid 1px black;
+    color: white;
+    text-align: center;
+}
+.obstacle{
+    background: black;
+    color: black;
+}
+.start{
+    background: yellowgreen;
+}
+.end{
+    background: yellow;
+}
+.visited{
+    background: green;
+}
+.isVisited{
+    background: red;
+}
+.current{
+    background: blueviolet;
+}
+.way{
+    background: blue;
+}
